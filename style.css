@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --shadow: #b8b8b8;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 550px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 2px 20px var(--shadow);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label,
+p {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="file"]),
+select {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 10px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+input:hover,
+select:hover {
+    transform: translateY(-2px);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 10px;
+    width: 550px;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.reset {
+    background: #616161;
+    color: white;
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.reset:hover {
+    transform: translateY(-5px);
+}
+
+.submit {
+    background: blue;
+    color: white;
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+}
+
+.submit:hover {
+    transform: translateY(-5px);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+hr {
+    border: 1px solid black;
+}
